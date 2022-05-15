@@ -55,7 +55,7 @@ exports.newsletterSignupProcess = (req, res) => {
         intro: 'Database error!',
         message: 'There was a database error; please try again later.',
       }
-      return res.redirect(303, '/newsletter-archive')
+      return res.redirect(303, '/newsletter-signup')
     })
 }
 exports.newsletterSignupThankYou = (req, res) => res.render('newsletter-signup-thank-you')
